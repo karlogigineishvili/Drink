@@ -1,0 +1,647 @@
+/* ==================== FONTS ==================== */
+@font-face {
+    font-family: "BBH";
+    src: url("fonts/BBHSansBartle-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "latina";
+    src: url("fonts/Pacifico-Regular.ttf") format("truetype");
+}
+
+/* ==================== RESET ==================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "BBH", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* ==================== NAVBAR ==================== */
+.custom-navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 214, 51, 0.95);
+    padding: 0.8rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Brand */
+.navbar-brand {
+    font-family: "latina", sans-serif;
+    color: #000;
+    letter-spacing: 4px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+/* Nav list */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+}
+.nav-link {
+    color: #000 !important;
+    font-weight: 200!important;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    font-family: "latina", sans-serif;
+    color: #1a365d !important;
+}
+.nav-link:hover {
+    text-decoration: underline;
+    color: #1a365d !important;
+}
+
+/* Order button */
+.order-btn {
+    background-color: #2e5882 !important;
+    color: white !important;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500 !important;
+    font-family:"latina", sans-serif;
+}
+
+.order-btn:hover {
+    background-color: #1a365d !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+    color: #a0e7ff !important;
+    
+}
+
+/* ==================== HAMBURGER MENU ==================== */
+.nav-toggle {
+    opacity: 0;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 1002;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1001;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background: #000;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+/* ==================== HERO ==================== */
+.hero {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #ffd633 0%, transparent 70%),
+                url("Image/ganieri.png") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    padding-top: 90px;
+    position: relative;
+}
+
+.hero h1 {
+    font-family: "latina", sans-serif;
+    font-size: 4.5rem;
+    color: #000;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.15);
+}
+
+.hero h3 {
+    font-size: 1.8rem;
+    color: #1a365d;
+    font-weight: 400;
+    margin: 0.5rem 0 1.5rem;
+    font-family: "latina", sans-serif;
+}
+
+.mt-4 { 
+    margin-top: 1.5rem; 
+}
+
+/* ==================== MAIN BLOCKS ==================== */
+.main-blocks {
+    display: flex;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+}
+
+.main-blocks .block {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: transform 0.4s ease;
+}
+
+.main-blocks .block:hover {
+    transform: scale(1.03);
+}
+
+.block1 {
+    background-image: url('Image/coctail.jpg');
+}
+
+.block2 {
+    background-image: url('Image/coctail2.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.block-content {
+    background: rgba(194, 162, 72, 0.121);
+    padding: 2.2rem 1.8rem;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+    max-width: 420px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.block-content h2 {
+    font-family: "latina", sans-serif;
+    font-size: 2.3rem;
+    color: #2c5282;
+    margin-bottom: 0.8rem;
+    line-height: 1.2;
+}
+
+.block-content p {
+    font-size: 1.8rem;
+    color: #1a365d;
+    line-height: 1.7;
+    font-family: "latina", sans-serif;
+}
+
+/* ==================== COCKTAIL COLLECTIONS ==================== */
+.cocktail-collections {
+    background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+    color: white;
+    text-align: center;
+    padding: 4.5rem 1.5rem;
+}
+
+.cocktail-collections h2 {
+    font-family: "latina", sans-serif;
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.cocktail-collections p {
+    font-size: 1.1rem;
+    max-width: 720px;
+    margin: 0 auto 2.5rem;
+    opacity: 0.92;
+    line-height: 1.7;
+    font-family: "latina", sans-serif;
+}
+
+.cocktail-images {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.cocktail-img {
+    width: 220px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 22px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: all 0.4s ease;
+    border: 3px solid rgba(255,255,255,0.15);
+}
+
+.cocktail-img:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 16px 30px rgba(0,0,0,0.4);
+}
+/* ==================== Parallax ==================== */
+.parallax {
+  width: 100%;
+  height: 100vh;
+
+  background-image: url('image/APR.png');
+  background-size: cover;
+  
+  /* ზედა ნაწილი სრულად ჩანს */
+  background-position: 50% 0%;     /* 50% = ცენტრში, 0% = ზემოდან */
+  
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+/* ==================== RESPONSIVE =====RESPONSIVE===========RESPONSIVE=======RESPONSIVE=============== */
+
+/* Mobile & Tablet (≤768px) */
+@media (max-width: 768px) {
+    .custom-navbar {
+        padding: 0.7rem 1rem;
+    }
+    .navbar-brand {
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+    }
+
+    /* ჰამბურგერი ყოველთვის ჩანს */
+    .hamburger {
+        display: flex !important;
+    }
+
+    /* მენიუ დამალულია */
+    .navbar-nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(255, 214, 51, 0.98);
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+        padding: 0 1.5rem;
+        z-index: 999;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        
+    }
+
+    /* მენიუ იხსნება */
+    .nav-toggle:checked ~ .navbar-nav {
+        max-height: 600px;
+        padding: 1.5rem;
+    }
+
+    .navbar-nav li {
+        padding: 0.8rem 0;
+        text-align: center;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .navbar-nav li:last-child {
+        border-bottom: none;
+    }
+
+    .nav-link, .order-btn {
+        display: block;
+        width: 100%;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .order-btn {
+        margin: 1rem auto 0;
+        max-width: 220px;
+        padding: 0.6rem 1.5rem;
+    }
+
+    .hero {
+        padding-top: 80px;
+    }
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .hero h3 {
+        font-size: 1.4rem;
+    }
+
+    .main-blocks {
+        flex-direction: column;
+        height: auto;
+    }
+    .main-blocks .block {
+        height: 260px;
+    }
+    .block2 {
+        order: -1;
+        height: 300px;
+    }
+    .block-content {
+        margin: 1.5rem;
+        padding: 1.6rem;
+        border-radius: 16px;
+    }
+    .block-content h2 {
+        font-size: 1.9rem;
+    }
+
+    .cocktail-collections {
+        padding: 3rem 1rem;
+    }
+    .cocktail-collections h2 {
+        font-size: 2.1rem;
+    }
+    .cocktail-img {
+        width: 180px;
+        height: 260px;
+    }
+    /*===================================== Footer==============*/
+.footer-container {
+        flex-direction: column;
+        align-items: center;     /* ყველა კოლონა ცენტრში */
+    }
+
+    .footer-col {
+        text-align: right;       /* Contact, Service — მარჯვნივ */
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .footer-col.center {
+        text-align: center;      /* ლოგო და სოც. — ცენტრში */
+    }
+
+    /* Footer*/
+    .parallax {
+        display: none;
+    }
+}
+
+/* Tablet only (431px - 768px) */
+@media (min-width: 431px) and (max-width: 768px) {
+    .main-blocks {
+        height: 380px;
+    }
+    .block-content {
+        max-width: 360px;
+        padding: 1.8rem;
+    }
+    .cocktail-img {
+        width: 190px;
+        height: 280px;
+    }
+}
+
+/* Desktop (≥769px) */
+@media (min-width: 769px) {
+    .hamburger, .nav-toggle {
+        display: none !important;
+    }
+    .navbar-nav {
+        max-height: none !important;
+    }
+}
+
+/* ==================== HAMBURGER X ANIMATION ==================== */
+.nav-toggle:checked ~ .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+.nav-toggle:checked ~ .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+.nav-toggle:checked ~ .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+}
+/* ==================== FOOTER ==================== */
+.site-footer {
+    background: #0f172a;
+    color: #e2e8f0;
+    padding: 3rem 1.5rem;
+    font-family: playfair display, serif;
+    margin-top: 0rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 220px;
+    text-align: center;
+    
+}
+
+.footer-col h3 {
+    font-family: "latina", sans-serif;
+    color: #fbbf24;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    
+}
+
+.footer-col p {
+    margin: 0.4rem 0;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #cbd5e1;
+}
+
+/* Center Column */
+.center {
+    text-align: center;
+}
+
+.footer-logo {
+    font-family: "latina", sans-serif;
+    font-size: 2.8rem;
+    color: #fbbf24;
+    margin: 0 0 1rem;
+    letter-spacing: 2px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.social-links a {
+    color: #cbd5e1;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #fbbf24;
+}
+
+/*====================== ABOUT US ===================*/
+
+.about-hero {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                url("Image/ganieri.png") center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(144, 160, 37);
+    padding-top: 90px;
+}
+
+.hero-content h1 {
+    font-family: "latina", sans-serif;
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+.highlight {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fbbf24;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+/* Story & Mission */
+.about-story, .about-mission {
+    padding: 4rem 1.5rem;
+    text-align: center;
+}
+
+.about-story {
+    background: #36b194;
+}
+
+.about-mission {
+    background: #035477;
+}
+
+.about-story h2, .about-mission h2 {
+    font-family: "latina", sans-serif;
+    font-size: 2.6rem;
+    color: #1a365d;
+    margin-bottom: 1.5rem;
+}
+
+.about-story p, .about-mission p {
+    font-size: 1.1rem;
+    color: #475569;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Delivery Section */
+.about-delivery {
+    background: #ffd633;
+    padding: 5rem 1.5rem;
+}
+
+.delivery-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.delivery-content .text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.delivery-content h3 {
+    font-family: "latina", sans-serif;
+    font-size: 2rem;
+    color: #1a365d;
+    margin-bottom: 1rem;
+}
+
+.delivery-content p {
+    color: #1a365d;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.delivery-content .image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.delivery-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* Active Nav Link */
+.nav-link.active {
+    color: #2e5882 !important;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* ==================== MOBILE ==================== */
+@media (max-width: 768px) {
+    .about-hero {
+        height: 70vh;
+        padding-top: 80px;
+    }
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    .highlight {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+    .delivery-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-story h2, .about-mission h2 {
+        font-size: 2rem;
+    }
+} 
