@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Online - Aperitivo</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="image/martini-glass-citrus-solid-full.svg" type="image/svg+xml">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="order.css">
+
+</head>
+<body>
+
+<!-- ==================== NAVBAR ==================== -->
+<nav class="custom-navbar">
+    <a class="navbar-brand" href="index.html">Aperitivo</a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <ul class="navbar-nav">
+        <li><a class="nav-link" href="index.html">Our Cocktail</a></li>
+        <li><a class="nav-link" href="order.html">Order Online</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+        <li><a class="nav-link" href="#"><i class="fa-solid fa-user"></i></a></li>
+        <li><a class="order-btn" href="#">Log In</a></li>
+    </ul>
+</nav>
+
+<!-- ==================== ORDER PAGE - COCKTAIL MENU ==================== -->
+<section class="order-page">
+    <h1>Our Cocktails</h1>
+    <div class="cocktails-grid">
+        <!-- Cocktail 1 -->
+        <div class="cocktail-card">
+            <div class="cocktail-info">
+                <h3>Margarita</h3>
+                <p>A tart and refreshing cocktail made with tequila and triple sec combined with fresh lime juice.</p>
+                <span class="price">$11.99</span>
+            </div>
+            <img src="image/drink1.jpg" alt="Margarita" class="cocktail-img">
+        </div>
+
+        <!-- Cocktail 2 -->
+        <div class="cocktail-card">
+            <div class="cocktail-info">
+                <h3>Piña Colada</h3>
+                <p>A fun and fruity tropical blend of creamy coconut, smooth white rum, and tangy pineapple, perfect for sweet tooths.</p>
+                <span class="price">$12.99</span>
+            </div>
+            <img src="image/drink2.jpg" alt="Piña Colada" class="cocktail-img">
+        </div>
+
+        <!-- Cocktail 3 -->
+        <div class="cocktail-card">
+            <div class="cocktail-info">
+                <h3>Passion Fruit Martini</h3>
+                <p>A prosecco-based cocktail with passion fruit pulp, served in a martini glass and topped with half a passion fruit.</p>
+                <span class="price">$13.99</span>
+            </div>
+            <img src="image/drink3.jpg" alt="Passion Fruit Martini" class="cocktail-img">
+        </div>
+
+        <!-- Cocktail 4 -->
+        <div class="cocktail-card">
+            <div class="cocktail-info">
+                <h3>Sex on the Beach</h3>
+                <p>A sweet and fruity mixture synonymous with summer.</p>
+                <span class="price">$10.99</span>
+            </div>
+            <img src="image/drink4.jpg" alt="Sex on the Beach" class="cocktail-img">
+        </div>
+
+        <!-- Cocktail 5 -->
+        <div class="cocktail-card">
+            <div class="cocktail-info">
+                <h3>Espresso Martini</h3>
+                <p>A coffee-flavoured cocktail with freshly brewed espresso and a frothy top layer.</p>
+                <span class="price">$12.99</span>
+            </div>
+            <img src="image/drink5.jpg" alt="Espresso Martini" class="cocktail-img">
+        </div>
+
+        <!-- Cocktail 6 -->
+        <div class="cocktail-card">
+            <div class="cocktail-info">
+                <h3>Mojito</h3>
+                <p>A minty drink with white rum, ideal for hot afternoons, transporting you to a beach setting.</p>
+                <span class="price">$10.99</span>
+            </div>
+            <img src="image/drink6.jpg" alt="Mojito" class="cocktail-img">
+        </div>
+
+        <!-- Cocktail 7 -->
+        <div class="cocktail-card">
+            <div class="cocktail-info">
+                <h3>Aperol Spritz</h3>
+                <p>A vibrant Italian aperatif blending Aperol, prosecco, and soda, perfect for al fresco dining.</p>
+                <span class="price">$9.99</span>
+            </div>
+            <img src="image/drink7.jpg" alt="Aperol Spritz" class="cocktail-img">
+        </div>
+
+        <!-- Cocktail 8 -->
+        <div class="cocktail-card">
+            <div class="cocktail-info">
+                <h3>Pimm's</h3>
+                <p>A fruity British summer punch, often made in a pitcher with mint, cucumber, orange, and strawberries.</p>
+                <span class="price">$11.99</span>
+            </div>
+            <img src="image/drink8.jpg" alt="Pimm's" class="cocktail-img">
+        </div>
+
+        <!-- Cocktail 9 -->
+        <div class="cocktail-card">
+            <div class="cocktail-info">
+                <h3>Old Fashioned</h3>
+                <p>A heady whisky-based mix with bitters, served over ice for refined palates.</p>
+                <span class="price">$13.99</span>
+            </div>
+            <img src="image/drink9.jpg" alt="Old Fashioned" class="cocktail-img">
+        </div>
+
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h3>Contact</h3>
+            <p>info@mysite.com</p>
+            <p>123-456-7890</p>
+            <p>500 Terry Francine Street<br>San Francisco, CA 94158</p>
+        </div>
+        <div class="footer-col center">
+            <h1 class="footer-logo">Apéritivo</h1>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h3>Service</h3>
+            <p>Same-Day delivery</p>
+            <p>All over San Francisco</p>
+            <p>Mon - Fri: 11am - 10pm</p>
+            <p>Sat - Sun: 11am - 12am</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
